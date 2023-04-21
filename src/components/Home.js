@@ -1,5 +1,6 @@
 import styled, { keyframes } from "styled-components";
 import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Home = () => {
   // Define a new keyframe animation for the background gradient
   const moveGradient = keyframes`
@@ -16,7 +17,7 @@ const Home = () => {
 
   // Define a new styled component for the page container with the animated gradient
   const PageContainer = styled.div`
-    background: linear-gradient(to bottom right, #042b12, #04062b);
+    background: linear-gradient(to bottom right, #0a662b, #060a47);
     background-size: 400% 400%;
     animation: ${moveGradient} 15s ease infinite;
     height: 100vh;
@@ -32,7 +33,7 @@ const Home = () => {
 
   // Define a new styled component for the heading
   const Tagline = styled.span`
-    font-size: 2rem;
+    font-size: 2.7rem;
     color: white;
     margin: 0.5rem;
     font-family: "Comforter Brush", cursive;
@@ -40,7 +41,7 @@ const Home = () => {
 
   // Define a new styled component for the paragraph
   const Paragraph = styled.p`
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: white;
     margin: 0.5rem;
     font-family: "Julee", cursive;
@@ -50,7 +51,7 @@ const Home = () => {
     color: white;
     position: relative;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Comforter Brush", cursive;
     cursor: pointer;
 
@@ -73,6 +74,12 @@ const Home = () => {
       transform: scaleX(1);
     }
   `;
+
+  const Icon = styled.span`
+    font-size: 24px;
+    margin-right: 8px;
+    color: white;
+  `;
   return (
     <div className="home">
       <PageContainer>
@@ -83,6 +90,19 @@ const Home = () => {
           <br />
           <br />
           <StyledLink to="/about">View Portfolio</StyledLink>
+          <br />
+          <br />
+          <a href="https://github.com/nkanyi73?tab=repositories">
+            <Icon>
+              <FaGithub />
+            </Icon>
+          </a>
+
+          <a href="https://www.linkedin.com/in/nicolas-kanyi-9723b2190/">
+            <Icon>
+              <FaLinkedin />
+            </Icon>
+          </a>
         </ContentContainer>
       </PageContainer>
     </div>
