@@ -21,8 +21,8 @@ const About = () => {
 
   const StyledPageTitle = styled.h1`
     font-family: "Montserrat", sans-serif;
-    letter-spacing: 2vw;
-    font-size: 8vw;
+    letter-spacing: 1vw;
+    font-size: 5vw;
   `;
   const StyledClicker = styled.a`
     text-decoration: none;
@@ -40,8 +40,7 @@ const About = () => {
             description="The aim of this research project was to find a solution to the market model, filled with many
             middlemen, that is present between producers and buyers of raw materials. The outcome of the
             research project was an e-commerce application that allows buyers and sellers (of bulk quantities) to
-            transact directly without the influence of middle men. This research project heavily relied on
-            secondary sources of information. This was pair programming project that where I mostly worked on the PHP backend."
+            transact directly without the influence of middle men.  This was a pair programming project where I mostly worked on the PHP backend."
             tags={[
               { name: "PHP", color: "red" },
               { name: "Laravel", color: "green" },
@@ -54,12 +53,10 @@ const About = () => {
           <Project
             imageUrl={ VirtualOffice }
             projectTitle="PowerCRM"
-            description="This is a model driven app that I created using the Microsoft Power Platform as a project during an internship
-            I did. The application is a CRM that eases the task of managing relationships with customers, by associating each entity
+            description="The application is a CRM that eases the task of managing relationships with customers, by associating each entity
             with an existing customer. The application features a Customers and Contacts module as well as an Invoice Processing 
             Module. The Invoice Processing features a flow that performs knowledge extraction from invoices uploaded on the common 
-            Sharepoint site. The app also retrieves site statistics from a WordPress storefront.
-            The CRM was created with the specific needs of the company in mind. "
+            Sharepoint site. The app also retrieves site statistics from a WordPress storefront."
             tags={[
               { name: "Microsoft Power Apps", color: "red" },
               { name: "Microsoft Flow", color: "green" },
@@ -108,7 +105,9 @@ const About = () => {
           <Project
             imageUrl={DrLive}
             projectTitle="Doctors Live "
-            description="This project was for a mental health care services company that catered to the needs of individuals, organizations, and other healthcare providers. Throughout the project, I had the opportunity to refine my skills in frontend development and collaborate with my team members to achieve the project's objectives. Overall, this experience helped me to grow as a frontend developer and provided me with valuable insights into working on projects for clients in the healthcare sector."
+            description="This project was for a mental health care services company that catered to the needs of individuals, 
+            organizations, and other healthcare providers. Throughout the project, I had the opportunity to refine my skills 
+            in frontend development and collaborate with my team members to achieve the project's objectives."
             tags={[
               { name: "HTML", color: "red" },
               { name: "CSS", color: "green" },
